@@ -6,8 +6,8 @@ function solve(data) {
     }, {});
 
     sortetBook = Object.entries(addressBook)
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .forEach(element => console.log(`${element[0]} -> ${element[1]}`));
+                                            .sort((a, b) => a[0].localeCompare(b[0]))
+                                            .forEach(element => console.log(`${element[0]} -> ${element[1]}`));
 }
 
 solve(['Tim:Doe Crossing',
