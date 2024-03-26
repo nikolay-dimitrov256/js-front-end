@@ -12,20 +12,13 @@ function solve() {
       // Find and mark matches
       for (const rowElement of trElements) {
          rowElement.className = '';
-         let isSelected = false;
 
          const tdElements = rowElement.querySelectorAll('td');
 
          for (const cellElement of tdElements) {
             if (cellElement.textContent.toLowerCase().includes(searchedWord.toLowerCase())) {
-               // rowElement.classList.add('select');
-               // rowElement.className = 'select';
-               isSelected = true;
+               rowElement.classList.add('select');
             }
-         }
-
-         if (isSelected) {
-            rowElement.className = 'select';
          }
       }
 
